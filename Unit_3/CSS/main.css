@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
+@import "form.css";
+
+:root { /*	:root selector matches the documents root element */
+    --blue: #c08000;	/* <variable-name>:<variable-value> */
+    --white: #ffffff;
+    --grey: #b34403;
+}
+    
+
+body {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal; 
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color:var(--grey);
+    background-image: url('../images/bg.jpg');
+    background-repeat: repeat;
+}
+
+header {
+
+    color: white;
+    text-align: center;
+    padding: 10px;
+    background-image: url("../images/header.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+  width:100%;
+}
+
+header h1, nav{
+    
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-style: normal; 
+}
+
+
+nav {
+    text-align: center;
+    margin-top: 0;
+}
+
+nav a {
+    color: white;
+    margin: 10px;
+    padding: 10px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    background-color: var(--grey);
+}
+
+nav a:active{
+    color: var(--blue);
+}
+
+a{
+    color: var(--grey);
+    text-decoration: underline 1px var(--grey);
+}
+.container a:visited{
+    color: var(--blue);
+    text-decoration: underline 1px var(--blue);
+}
+/*
+#this another way to select the element
+*/
+
+main {
+    padding: 20px;
+
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.redbox {
+    border: 5px solid red;
+}
+
+section {
+    margin-bottom: 20px;
+    padding: 20px;
+    border-bottom: 2px solid #ccc;
+
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+table, td {
+    text-align: center;
+}
+
+
+footer p {
+    text-align: center;
+    color: var(--blue);
+}
+
+ul {
+    list-style:disc;
+}
